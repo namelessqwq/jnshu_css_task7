@@ -1,0 +1,136 @@
+body {
+  background-color: #f0f0f0 !important;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* header部分 */
+.header {
+  height: 80px;
+  background-color: #29bde0; 
+}
+
+.header .menu {
+  float: left;
+  width: 34px;
+  height: 28px;
+  background: url(../img/home_menu.png) no-repeat;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* nav部分 */
+.nav {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 26px;
+  width: 90vw;
+  height: 80px;
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #c9c9c9;
+}
+
+.nav .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.nav .icon {
+  float: right;
+  font-size: 2rem;
+  color: #e7e7e7;
+  right: 10px;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+/* main部分 */
+.main {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 26px;
+  background-color: #fff;
+  position: relative;
+}
+
+.main .title {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #fdd793;
+  color: #fbb435;
+  font-size: 2rem;
+  line-height: 50px;
+  text-align: center;
+}
+
+.main .game_type button {
+  margin-top: 10px;
+  width: 70vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color: #69d1e9;
+  height: 80px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.main .game_type p {
+  text-align: center;
+  color: #787878;
+  margin-top: 10px;
+}
+
+.main .page ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main .page ul li {
+  width: 15px;
+  height: 15px;
+  content: "";
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.main .page ul li:first-child {
+  background-color: #69d1e9;
+}
+
+.main .filp {
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  border: none;
+  border-left: 5vw solid #fbb435;
+  border-top: 5vw solid transparent;
+  border-bottom: 5vw solid transparent;
+  background-color: transparent;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
+}
