@@ -1,0 +1,124 @@
+body {
+  background-color: #29bde0 !important;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+
+ul li, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* header部分 */
+.header {
+  height: 80px;
+  position: relative;
+}
+
+.header .menu {
+  position: absolute;
+  background: url(../../img/page2/header_menu.png) no-repeat;
+  width: 39px;
+  height: 40px;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .close {
+  position: absolute;
+  background: url(../../img/page2/header_close.png) no-repeat;
+  width: 36px;
+  height: 36px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .title {
+  position: absolute;
+  font-size: 3rem;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header .close {
+  opacity: 1;
+}
+
+/* nav部分 */
+.nav {
+  height: 60px;
+  background-color: #b9e9f5;
+  position: relative;
+}
+
+.nav p {
+  line-height: 60px;
+  margin-left: 40px;
+  font-size: 1.5rem;
+}
+
+.nav .icon {
+  background: url(../../img/page2/vote_icon.png);
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) scale(0.8);
+}
+
+.nav:after {
+  width: 0;
+  height: 0;
+  border: 8px solid;
+  border-color: #b9e9f5 transparent transparent;
+  margin-top: -11px;
+  margin-left: 50px;
+}
+
+/* main部分 */
+.main {
+  position: relative;
+}
+
+.main .explain {
+  color: #fff;
+  position: relative;
+  left: 50px;
+  top: 10px;
+  font-size: 1.5rem;
+}
+
+.main .vote {
+  margin-top: 30px;
+}
+
+.main .vote {
+  text-align: center;
+}
+
+.main .vote > li > div {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #fff;
+  margin-bottom: 50px;
+}
+
+.main .vote > li > div > div:first-child {
+  background-color: #f5c97b;
+  height: 70px;
+  line-height: 70px;
+}
+
+.main .vote > li > div > div:nth-child(2) {
+  background-color: #83b09a;
+}
