@@ -1,5 +1,7 @@
 body {
   background-color: #29bde0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -66,7 +68,7 @@ ul li, ul {
   font-size: 1.5rem;
 }
 
-.nav .icon {
+.nav .play {
   background: url(../../img/page2/vote_icon.png);
   width: 52px;
   height: 52px;
@@ -106,14 +108,14 @@ ul li, ul {
   text-align: center;
 }
 
-.main .vote > li > div {
+.main .vote > li > div:nth-child(1) {
   width: 100px;
   height: 100px;
   border: 5px solid #fff;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
-.main .vote > li > div > div:first-child {
+.main .vote > li > div:nth-child(1) > div:first-child {
   background-color: #f5c97b;
   height: 70px;
   line-height: 70px;
@@ -121,4 +123,63 @@ ul li, ul {
 
 .main .vote > li > div > div:nth-child(2) {
   background-color: #83b09a;
+}
+
+.main .vote .col-xs-4 .hover {
+  height: 30px;
+  /* margin-bottom: 10px; */
+}
+
+.main .vote .col-xs-4 .hover div {
+  width: 30px;
+  height: 30px;
+  transform: scale(0.8);
+}
+
+.hover div:nth-child(1) {
+  background: url(../../img/page2/vote_01.png);
+}
+
+.hover {
+  display: flex;
+  max-width: 100px;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
+.hover img {
+  max-width: 22px;
+  height: 22px;
+}
+
+.hover img:nth-child(2), .hover img:nth-child(3),.hover img:nth-child(4){
+  margin-left:3px;
+}
+
+.main .vote > li:hover .hover {
+  visibility: visible;
+}
+
+/* footer部分 */
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: #29bde0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer button {
+  width: 70vw;
+  height: 80px;
+  background-color: #fbb435;
+  margin: 10px 15vw;
+}
+
+.main:after {
+  height: 80px;
+  content: "";
+  width: 100%;
+  display: block;
 }
