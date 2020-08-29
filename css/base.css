@@ -27,6 +27,15 @@ ul li {
   margin-left: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:link {
+  text-decoration: none;
+}
+
 /* nav部分 */
 .nav {
   margin-left: 5vw;
@@ -78,7 +87,7 @@ ul li {
   text-align: center;
 }
 
-.main .game_type button {
+.main .game_type a {
   margin-top: 10px;
   width: 70vw;
   margin-left: 10vw;
@@ -91,6 +100,8 @@ ul li {
   outline: none;
   border: none;
   font-size: 2rem;
+  display: block;
+  line-height: 80px;
 }
 
 .main .game_type p {
